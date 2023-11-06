@@ -6,8 +6,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body class="p-0">
+    <header class="colorPrimary">
+      <div class="content-width content-header">
+        <div class="brand-header"></div>
+        <form class="input-group-header" method="get">
+          <div class="prefix-input-header">
+            <select name="product-group" class="colorSecondary">
+              <option value="0">ทุกหมวดหมู่</option>
+              <option value="1">Proccessor</option>
+              <option value="2">Graphics Card</option>
+              <option value="3">Ram</option>
+              <option value="4">Storage</option>
+              <option value="5">Power Supply</option>
+            </select>
+          </div>
+          <div class="center-input-header">
+            <input type="text" name="search-keyword" placeholder="Quick Search">
+          </div>
+          <div class="postfix-input-header">
+            <button type="submit"><img src="/images/icon/search.png" alt="" style="width: 100%; height: 100%;"></button>
+          </div>
+        </form>
+        <div class="go-to-profile">
+          <a href="#" class="tag-a a-btn sign-in-btn">เข้าสู่ระบบ</a>
+          <div class="vertical-line"></div>
+          <a href="#" class="tag-a a-btn sign-up-btn">สมัครสมาชิก</a>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

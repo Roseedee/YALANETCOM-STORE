@@ -1,0 +1,103 @@
+@import url(color.css);
+
+:root {
+    /* padding */
+    --header-padding: 10px;
+    --header-padding-bitween-content: 10px;
+
+    /* border radius */
+    --br-5: 5px;
+    --br-10: 10px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-header {
+    padding: var(--header-padding);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.brand-header {
+    width: 150px;
+    height: 100%;
+    background-color: white;
+    opacity: 0.41;
+    border-radius: var(--br-5);
+}
+
+.input-group-header {
+    flex-grow: 1;
+    display: flex;
+    padding: 0px var(--header-padding-bitween-content);
+    justify-content: center;
+}
+
+.prefix-input-header select {
+    height: 100%;
+    width: 120px;
+    border: none;
+    border-radius: var(--br-5) 0 0 var(--br-5);
+    padding: var(--header-padding-bitween-content);
+    overflow: hidden;
+    outline: none;
+}
+
+.center-input-header {
+    flex-grow: 1;
+}
+
+.center-input-header input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: var(--header-padding-bitween-content);
+}
+
+.postfix-input-header button {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0px var(--br-5) var(--br-5) 0px;
+    padding: var(--header-padding-bitween-content);
+}
+
+
+.go-to-profile {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    height: 100%;
+}
+
+.a-btn {
+    color: white;
+    padding: var(--header-padding-bitween-content);
+    border-radius: var(--br-5);
+}
+
+.a-btn:hover {
+    opacity: 0.8;
+}
+
+.sign-in-btn {
+    background-color: none;
+}
+
+.sign-up-btn {
+    background-color: var(--color-secondary);
+}
+
+.vertical-line {
+    border-left: 2px solid white;
+    height: 80%;
+}
