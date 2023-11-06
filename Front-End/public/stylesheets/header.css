@@ -66,6 +66,7 @@ header {
     outline: none;
     border-radius: 0px var(--br-5) var(--br-5) 0px;
     padding: var(--header-padding-bitween-content);
+    background-color: var(--color-secondary);
 }
 
 
@@ -80,20 +81,23 @@ header {
 }
 
 .a-btn {
-    color: white;
     padding: var(--header-padding-bitween-content);
     border-radius: var(--br-5);
+    transition: 0.3s;
 }
 
 .a-btn:hover {
-    opacity: 0.8;
+    color: black;
+    background-color: var(--color-secondary-hover);
 }
 
 .sign-in-btn {
+    color: white;
     background-color: none;
 }
 
 .sign-up-btn {
+    color: black;
     background-color: var(--color-secondary);
 }
 
