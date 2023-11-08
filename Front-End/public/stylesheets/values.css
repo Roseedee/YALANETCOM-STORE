@@ -1,0 +1,18 @@
+:root {
+    --color-bg-body: #F6F3FF;
+    --color-primary: #001C52;
+    --color-primary-hover: #4E5E7E;
+    --color-secondary: #C9D100;
+    --color-secondary-hover: #CACD77;
+
+    /* border radius */
+    --br-5: 5px;
+    --br-8: 8px;
+    --br-10: 10px;
+
+    /* padding */
+    --padding-between-content: 10px;
+
+    /* shadow */
+    --box-shadow-default: 3px 3px 6px rgba(0, 0, 0, 0.05);
+}

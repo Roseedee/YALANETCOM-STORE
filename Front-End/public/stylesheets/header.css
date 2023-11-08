@@ -1,18 +1,17 @@
-@import url(color.css);
+@import url(values.css);
 
 :root {
+    /* size */
+    --header-hieght: 60px;
+
     /* padding */
     --header-padding: 10px;
-    --header-padding-bitween-content: 10px;
-
-    /* border radius */
-    --br-5: 5px;
-    --br-10: 10px;
 }
 
 header {
     width: 100%;
-    height: 60px;
+    background-color: var(--color-primary);
+    height: var(--header-hieght);
     display: flex;
     justify-content: center;
 }
@@ -34,7 +33,7 @@ header {
 .input-group-header {
     flex-grow: 1;
     display: flex;
-    padding: 0px var(--header-padding-bitween-content);
+    padding: 0px var(--padding-between-content);
     justify-content: center;
 }
 
@@ -43,7 +42,8 @@ header {
     width: 120px;
     border: none;
     border-radius: var(--br-5) 0 0 var(--br-5);
-    padding: var(--header-padding-bitween-content);
+    padding: var(--padding-between-content);
+    background-color: var(--color-secondary);
     overflow: hidden;
     outline: none;
 }
@@ -57,7 +57,7 @@ header {
     width: 100%;
     border: none;
     outline: none;
-    padding-left: var(--header-padding-bitween-content);
+    padding-left: var(--padding-between-content);
 }
 
 .postfix-input-header button {
@@ -65,23 +65,26 @@ header {
     border: none;
     outline: none;
     border-radius: 0px var(--br-5) var(--br-5) 0px;
-    padding: var(--header-padding-bitween-content);
+    padding: var(--padding-between-content);
     background-color: var(--color-secondary);
 }
 
+.postfix-input-header button:hover {
+    background-color: var(--color-secondary-hover);
+}
 
 .go-to-profile {
     flex-grow: 1;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     max-width: 200px;
     height: 100%;
 }
 
 .a-btn {
-    padding: var(--header-padding-bitween-content);
+    padding: var(--padding-between-content);
     border-radius: var(--br-5);
     transition: 0.3s;
 }
@@ -99,9 +102,12 @@ header {
 .sign-up-btn {
     color: black;
     background-color: var(--color-secondary);
+    margin-left: var(--padding-between-content);
 }
 
 .vertical-line {
     border-left: 2px solid white;
-    height: 80%;
+    margin-left: var(--padding-between-content);
+    border-radius: 2px;
+    height: 70%;
 }

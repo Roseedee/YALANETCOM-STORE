@@ -1,5 +1,6 @@
 @import url(header.css);
-@import url(color.css);
+@import url(nav.css);
+@import url(values.css);
 
 * {
   padding: 0px;
@@ -7,15 +8,31 @@
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+body {
+  background-color: var(--color-bg-body);
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .tag-a {
   text-decoration: none;
 }
 
-.colorPrimary {
+.width-100 {
+  width: 100%;
+}
+
+.bg-color-primary {
   background-color: var(--color-primary);
 }
 
-.colorSecondary {
+.bg-color-secondary {
   background-color: var(--color-secondary);
 }
 
@@ -23,7 +40,6 @@
   width: 70%;
   /* max-width: 1500px; */
   min-width: 600px;
-  height: 100%;
 }
 
 /* screen width < 1000px */

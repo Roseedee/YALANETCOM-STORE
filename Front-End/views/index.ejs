@@ -2,19 +2,23 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/views/index.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/javascripts/product-menu.js"></script>
+
   </head>
-  <body class="p-0">
-    <header class="colorPrimary">
-      <div class="content-width content-header">
+  <body>
+    <header>
+      <div class="content-width content-header ps-0 pe-0">
         <a href="/">
           <div class="brand-header"></div>
         </a>
         <form class="input-group-header" method="get">
           <div class="prefix-input-header">
-            <select name="product-group" class="colorSecondary">
+            <select name="product-group">
               <option value="0">ทุกหมวดหมู่</option>
               <option value="1">Proccessor</option>
               <option value="2">Graphics Card</option>
@@ -37,5 +41,87 @@
         </div>
       </div>
     </header>
+    <nav class="nav">
+      <div class="content-width nav-content">
+        <div class="nav-prefix">
+          <a href="/" class="btn-nav bg-color-primary space-item-start tag-a"><img src="/images/icon/home.png" alt="">หน้าหลัก</a>
+          <a href="" class="btn-nav bg-color-primary space-item-center tag-a"><img src="/images/icon/product.png" alt="">สินค้า</a>
+        </div>
+        <div class="nav-postfix">
+          <a href="" class="btn-nav bg-color-secondary space-item-center tag-a"><img src="/images/icon/tracking.png" alt="">รายการสั่งซื้อ</a>
+          <a href="" class="btn-nav bg-color-primary space-item-center tag-a"><img src="/images/icon/heart.png" alt="">ถูกใจ</a>
+          <a href="" class="btn-nav bg-color-primary space-item-end tag-a"><img src="/images/icon/cart.png" alt="">ตะกร้า</a>  
+        </div>
+      </div>
+    </nav>
+    <div class="page">
+      <div class="banner">
+
+      </div>
+      <div class="content-width content">
+        <div class="product-menu-container">
+          <p class="title-product-menu">รายการสินค้า</p>
+          <div class="product-group">
+            <div class="product-item">
+              <div class="border-front"></div>
+              <div class="product-item-content">
+                <p>จอโน๊ตบุ๊ค</p>
+                <div class="product-sub-item">
+                  <a href="">Acer</a>
+                  <a href="">Lenovo</a>
+                  <a href="">Dell</a>
+                  <a href="">Asus</a>
+                  <a href="">HP</a>
+                  <a href="">Fujisu</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="border-front"></div>
+              <div class="product-item-content">
+                <p>จอโน๊ตบุ๊ค</p>
+                <div class="product-sub-item">
+                  <a href="">Acer</a>
+                  <a href="">Lenovo</a>
+                  <a href="">Dell</a>
+                  <a href="">Asus</a>
+                  <a href="">HP</a>
+                  <a href="">Fujisu</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="border-front"></div>
+              <div class="product-item-content">
+                <p>จอโน๊ตบุ๊ค</p>
+                <div class="product-sub-item">
+                  <a href="">Acer</a>
+                  <a href="">Lenovo</a>
+                  <a href="">Dell</a>
+                  <a href="">Asus</a>
+                  <a href="">HP</a>
+                  <a href="">Fujisu</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="border-front"></div>
+              <div class="product-item-content">
+                <p>จอโน๊ตบุ๊ค</p>
+                <div class="product-sub-item">
+                  <a href="">Acer</a>
+                  <a href="">Lenovo</a>
+                  <a href="">Dell</a>
+                  <a href="">Asus</a>
+                  <a href="">HP</a>
+                  <a href="">Fujisu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-container"></div>
+      </div>
+    </div>
   </body>
 </html>
