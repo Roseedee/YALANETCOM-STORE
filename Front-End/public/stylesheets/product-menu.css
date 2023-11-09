@@ -1,3 +1,5 @@
+@import url(values.css);
+
 .product-menu-container {
     height: 100%;
     background-color: white;
@@ -37,16 +39,36 @@
     padding: 10px;
 }
 
-.product-group .product-item .product-sub-item {
-    margin-top: 10px;
-    display: none;
-    padding-left: var(--padding-between-content);
+.product-group .product-item .product-item-content {
+    width: 100%;
 }
 
-.product-group .product-item .product-sub-item a{
-    display: block;
+.product-group .product-item .product-item-content p {
+    cursor: pointer;
+}
+
+.product-group .product-item .product-item-content ul {
+    display: none;
+    margin-top: 10px;
+}
+
+.product-group .product-item .product-item-content ul li {
+    list-style-type: none;
+}
+
+.product-group .product-item .product-item-content ul li a{
     padding: 10px 0px;
+    padding-left: 10px;
+    display: block;
     text-decoration: none;
+    border-radius: var(--br-5);
+    transition: 0.3s;
+}
+
+.product-group .product-item .product-item-content ul li a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: var(--color-secondary-hover1);
 }
 
 
