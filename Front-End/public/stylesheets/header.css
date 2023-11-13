@@ -17,7 +17,7 @@ header {
 }
 
 .content-header {
-    padding: var(--header-padding);
+    padding: var(--header-padding) 0px;
     display: flex;
     flex-wrap: nowrap;
 }

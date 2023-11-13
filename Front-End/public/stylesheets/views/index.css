@@ -1,4 +1,5 @@
 @import url(../product-menu.css);
+@import url(../product-list.css);
 
 .banner {
     width: 100%;
@@ -7,10 +8,26 @@
 }
 
 .content {
-    min-height: 500px;
     display: flex;
     flex-wrap: nowrap;
+    min-height: 500px;
     padding-top: var(--padding-between-content);
 }
 
+@media (max-width: 1080px) {
+    .content {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .product-menu-container {
+        margin-left: 10px;
+    }
+
+    .product-list-container {
+        padding-right: 5px;
+    }
+
+}
 

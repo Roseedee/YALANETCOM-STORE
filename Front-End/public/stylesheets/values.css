@@ -6,6 +6,9 @@
     --color-secondary-hover: #CACD77;
     --color-secondary-hover1: #e6e7cc;
 
+    /* size */
+    --content-width-xl: 1080px;
+
     /* border radius */
     --br-5: 5px;
     --br-8: 8px;
