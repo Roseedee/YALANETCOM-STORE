@@ -19,8 +19,9 @@ body {
   align-items: center;
 }
 
-.tag-a {
+a {
   text-decoration: none;
+  color: black;
 }
 
 .width-100 {
@@ -38,6 +39,10 @@ body {
 .content-width {
   width: 1080px;
   /* max-width: 1500px; */
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow-default);
 }
 
 /* screen width < 1000px */
