@@ -1,13 +1,18 @@
 @import url(values.css);
 
-.product-item-container {
+.product-and-pagination {
     padding-left: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.product-item-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: start;
-    width: 80%;
-
+    
+    
 }
 
 .product-item {
@@ -20,7 +25,7 @@
     .product-img {
         width: 100%;
         height: calc(100% * 0.40);
-        /* background-color: var(--color-bg-no-upload-image); */
+        background-color: var(--color-bg-no-upload-image);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,6 +77,12 @@
             font-weight: bold;
             color: var(--color-primary);
             padding: 5px 0px;
+
+            .full-price {
+                font-size: small;
+                margin-right: 5px;
+                text-decoration: line-through;
+            }
         }
     }
     
@@ -116,14 +127,14 @@
 @media only screen and (min-width: 600px) {
     .product-item {
         width: calc((100% - 20px) / 2);
-        height: 350px;
+        height: 275px;
     }
 }
 
 @media only screen and (min-width: 800px) {
     .product-item {
         width: calc((100% - 30px) / 3);
-        height: 350px;
+        height: 275px;
     }
 }
 

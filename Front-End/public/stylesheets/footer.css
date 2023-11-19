@@ -1,0 +1,138 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer-content {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-col {
+    flex-grow: 1;
+    /* background-color: aqua; */
+    padding: 10px;
+    min-width: 170px;
+
+    .header {
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+        .line {
+            display: block;
+            width: 3px;
+            border-radius: 4px;
+            height: 50%;
+            background-color: var(--color-primary);
+        }
+
+        .text {
+            padding-left: 10px;
+            font-family: TH SarabunPSK;
+            font-size: 26px;
+            font-weight: bold;
+        }
+    }
+
+    .contact-list {
+        padding-left: 10px;
+
+        .item {
+            font-family: TH SarabunPSK;
+            list-style-type: none;
+            font-size: 20px;
+        }
+    }
+
+    .icon-contact-list {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+
+        .item {
+            list-style-type: none;
+            width: 24px;
+            height: 24px;
+            padding-right: 10px;
+
+            .img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
+.footer-col:first-of-type {
+    flex-grow: 4;
+    max-width: 600px;
+    /* background-color: antiquewhite; */
+
+    .logo {
+        width: 165px;
+        height: 47px;
+        border-radius: 5px;
+        background-color: #697A99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-com {
+        font-weight:bold;
+        padding-top: 10px;
+        font-size: 22px;
+        font-family: TH SarabunPSK;
+        word-wrap: normal;
+    }
+
+    .reserved {
+        padding-top: 10px;
+        font-size: 22px;
+        font-family: TH SarabunPSK;
+    }
+}
+
+.footer-col:last-of-type {
+    flex-grow: 7;
+    /* background-color: blue; */
+
+    .list {
+        padding-left: 10px;
+
+        .item {
+            margin: 5px;
+            display: inline-block;
+            padding: 6px 10px;
+            border: 2px solid var(--color-primary);
+            border-radius: 5px;
+            transition: 0.2s;
+            font-family: TH SarabunPSK;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .item:hover {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white
+        }
+
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .footer-content {
+        flex-wrap: wrap;
+    }
+}

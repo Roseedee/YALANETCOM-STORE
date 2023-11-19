@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+
+    .page-item {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        border-bottom: 1px solid var(--color-primary);
+        border-top: 1px solid var(--color-primary);
+        border-left: 1px solid var(--color-primary);
+    }
+
+    .page-item-current {
+        background-color: var(--color-primary);
+        .link {
+            color: white;
+        }
+    }
+    
+    .page-item:first-of-type {
+        border-radius: 5px 0px 0px 5px;  
+    }
+    
+    .page-item:last-of-type { 
+        border-radius: 0px 5px 5px 0px;  
+        border-right: 1px solid var(--color-primary);
+    }
+
+    .page-item:hover {
+        background-color: var(--color-primary-hover1);
+    }
+}

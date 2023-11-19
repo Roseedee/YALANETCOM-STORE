@@ -1,6 +1,7 @@
+@import url(values.css);
 @import url(header.css);
 @import url(nav.css);
-@import url(values.css);
+@import url(footer.css);
 
 * {
   padding: 0px;
