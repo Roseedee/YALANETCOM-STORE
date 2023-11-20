@@ -1,6 +1,8 @@
 @import url(../product-menu.css);
 @import url(../product-list.css);
 @import url(../pagination.css);
+@import url(../sort.css);
+
 
 .banner {
     width: 100%;
