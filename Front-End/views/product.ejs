@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YALANETCOM</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/views/product.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/javascripts/product-menu.js"></script>
+    <script src="/javascripts/utility.js"></script>
+  </head>
+  <body onload="setBodyMinHeight()">
+    <header id="header">
+      <div class="content-width content-header ps-0 pe-0">
+        <a href="/">
+          <div class="brand-header"></div>
+        </a>
+        <form class="input-group-header" method="get">
+          <div class="prefix-input-header">
+            <select name="product-group">
+              <option value="0">ทุกหมวดหมู่</option>
+              <option value="1">Proccessor</option>
+              <option value="2">Graphics Card</option>
+              <option value="3">Ram</option>
+              <option value="4">Storage</option>
+              <option value="5">Power Supply</option>
+            </select>
+          </div>
+          <div class="center-input-header">
+            <input type="text" name="search-keyword" placeholder="Quick Search">
+          </div>
+          <div class="postfix-input-header">
+            <button type="submit"><img src="/images/icon/search.png" alt="" style="width: 100%; height: 100%;"></button>
+          </div>
+        </form>
+        <div class="go-to-profile">
+          <a href="#" class="tag-a a-btn sign-in-btn">เข้าสู่ระบบ</a>
+          <div class="vertical-line"></div>
+          <a href="#" class="tag-a a-btn sign-up-btn">สมัครสมาชิก</a>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <div class="content-width nav-content">
+        <div class="nav-prefix">
+          <a href="/" class="btn-nav space-item-start tag-a"><img src="/images/icon/home.png" alt="">หน้าหลัก</a>
+          <a href="" class="btn-nav space-item-center tag-a"><img src="/images/icon/product.png" alt="">สินค้า</a>
+        </div>
+        <div class="nav-postfix">
+          <a href="" class="btn-nav space-item-center tag-a"><img src="/images/icon/order-list.png" alt="">รายการสั่งซื้อ</a>
+          <a href="" class="btn-nav space-item-center tag-a"><img src="/images/icon/favorite-fill.png" alt="">ถูกใจ</a>
+          <a href="" class="btn-nav space-item-end tag-a"><img src="/images/icon/cart.png" alt="">ตะกร้า</a>  
+        </div>
+      </div>
+    </nav>
+    <div class="body" id="body">
+      <div class="content-width content">
+        <p class="path-to-prod">สินค้า : KEYBOARD HP-COMPAQ : คีย์บอร์ด Hp 15-CC 15-CB 15-BS 15-BW สีดำ ไทย อังกฤษ</p>
+        <div class="container product-img">
+          <div class="img-container">
+            <img class="img" src="/images/no-upload-image.png" alt="">
+            <ul class="img-list">
+              <li class="item"><img src="/images/no-upload-image.png" alt="" class="img"></li>
+              <li class="item"><img src="/images/no-upload-image.png" alt="" class="img"></li>
+              <li class="item"><img src="/images/no-upload-image.png" alt="" class="img"></li>
+              <li class="item"><img src="/images/no-upload-image.png" alt="" class="img"></li>
+              <li class="item"><img src="/images/no-upload-image.png" alt="" class="img"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container about-product">
+          
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="content-width footer-content">
+        <div class="footer-col">
+          <div class="logo"><p>Logo</p></div>
+          <p class="about-com">อะไหล่โน๊ตบุ๊ค จอโน๊ตบุ๊ค จอออลอินวัน แบตเตอรี่โน๊ตบุ๊ค สายชาร์จโน๊ตบุ๊ค พัดลมโน๊ตบุ๊ค สายแพรจอ สินค้าดี มีคุณภาพและราคาเป็นมิตร</p>
+          <p class="reserved">Copyright © 2023 All rights reserved</p>
+        </div>
+        <div class="footer-col">
+          <div class="header">
+            <span class="line"></span>
+            <p class="text">ติดต่อเรา</p>
+          </div>
+          <ul class="contact-list">
+            <li class="item">Facebook : YALANETCOM</li>
+            <li class="item">Line : @YALANETCOM</li>
+            <li class="item">Phone : 0826537095</li>
+          </ul>
+          <ul class="icon-contact-list">
+            <li class="item"><a href=""><img src="/images/icon/facebook.png" alt="" class="img"></a></li>
+            <li class="item"><a href=""><img src="/images/icon/line.png" alt="" class="img"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="header">
+            <span class="line"></span>
+            <p class="text">สินค้าและบริการอื่นๆ</p>
+          </div>
+          <div class="list">
+            <a href="/" class="item">จอโน๊ตบุ๊ค</a>
+            <a href="/" class="item">คีย์บอร์ดโน๊ตบุ๊ค</a>
+            <a href="/" class="item">ลำโพงโน๊ตบุ๊ค</a>
+            <a href="/" class="item">ลำโพงโน๊ตบุ๊ค</a>
+            <a href="/" class="item">ลำโพงโน๊ตบุ๊ค</a>
+            <a href="/" class="item">ลำโพงโน๊ตบุ๊ค</a>
+            <a href="/" class="item">ลำโพงโน๊ตบุ๊ค</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
