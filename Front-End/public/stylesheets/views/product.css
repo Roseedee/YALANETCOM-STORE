@@ -18,7 +18,7 @@
     width: initial;
     
     .img-container {
-        width: 40%;
+        width: 50%;
 
         .img {
             width: 100%;
@@ -27,20 +27,20 @@
 
         .img-list {
             display: flex;
+            gap: 2px;
             width: 100%;
-            height: min-content;
+            overflow-y: hidden;
             overflow-x: scroll;
 
             .item {
                 list-style-type: none;
-
                 .img {
-                    width: 150px;
+                    border: 2px solid rgb(188, 188, 188);
+                    height: 64px;
+                    width: auto;
                 }
             }
         }
-
-
     }
 }
 
